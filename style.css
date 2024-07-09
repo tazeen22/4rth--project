@@ -1,0 +1,153 @@
+body {
+    font-family: "FoundersGroteskWeb-Light", Arial, Helvetica, sans-serif;
+    background-color: #f8f5ec;
+    /* color: #000; */
+    margin: 0;
+    padding: 0;
+}
+/*----------------------------------------- header-------------------------------------  */
+
+header{
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+/* sidebar  */
+
+.sidenav {
+    height: 100%;
+    width: 700px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2c382d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* end sidebar  */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        grid-template-rows: auto 1fr auto; /* Change grid layout on smaller screens */
+    }
+
+    main {
+        padding: 10px; /* Adjust padding for main content on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 14px; /* Reduce font size for header and footer on smaller screens */
+    }
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ef;
+    padding: 1.5rem;
+}
+
+
+
+
+.closed {
+    border: 2px solid rgb(153, 146, 146);
+    font-size: 15px;
+    box-shadow: -1px 2px 16px 1px;
+    padding: 4px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    gap: 12rem;
+    background-color: #f1f1f1;
+    height: 200px;
+}
+
+.firstword{
+    font-weight: 200;
+    padding: 2em;
+}
+.midword{
+    font-size: 75px;
+}
+.lastword{
+    text-align: end;
+    padding: 2em;
+}
+/* .container-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+} */
+
+.box1 {
+   grid-column: 4;  
+    grid-row: 2;    
+    height: 320px;    
+    width: 744px;     
+    background-color: #324333;
+    text-align: center;
+    place-content: center;
+}
+.box2{
+    height: 350px;
+    width: 380px;
+    background-color: chocolate;
+}
+.box3{
+    height: 350px;
+    width: 380px;
+    background-color: #123f67;
+}
+
+/* --------------------------------------------container--2-------------------------------- */
+
+.container-2 .box1{
+    height: 350px;
+    width: 380px;
+    background-color: #ffffff;
+}
+
+.container-2 .box1:hover{
+    background-image: url(images/);
+}
